@@ -1,0 +1,57 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+    <head>
+        <title>Demo</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage" >
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- explore more meta tags on your own-->
+    </head>
+    <body>
+    <form action="Success.html" > <!-- novalidate : to stop browser's implicit validation-->
+<table>
+   <tr><td> <label for="fname">First Name:</label></td>
+        <td><input type="text" id="fname" value="vina" name="myname"  minlength="2" maxlength="15" required></td></tr>
+    <tr><td><label for="lname">Last Name:</label></td>
+        <td><input type="text" id="lname" placeholder="last name" name="myname" required></td></tr>
+    <tr><td><label for="uname">Set Username:</label></td>
+        <td><input type="text" id="uname"  name="uname" pattern="[A-Za-z]{3,6}" required></td></tr>
+    <tr><td><label for="pass">Set Password:</label></td>
+        <td><input type="password" id="pass"  name="password" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{5,10}" required></td></tr>
+    <tr><td></td>
+        <td><input type="checkbox" id="showp" name="showp"><label for="pass">Show password</label></td></tr>
+    <tr><td><label for="cpass">Confirm Password:</label></td>
+        <td><input type="password" id="cpass"  name="cpassword" required></td></tr>
+    <tr><td><label for="email">Email Id:</label></td>
+        <td><input type="email" id="email"  name="email" required></td></tr>
+    <tr><td><label for="mobile">Mobile number:</label></td>
+        <td><input type="text" id="mobile"  name="mobile" minlength="10" maxlength="10" pattern="[0-9]*" required></td></tr> 
+        <tr><td><label for="age">Age:</label></td>
+            <td><input type="number" id="age" name="age" min="1" max="115"  required></td></tr>
+     <tr><td><label>Choose Interested Courses:</label></td>           
+     <td><input type="checkbox" id="crs1" name="course" value="java" checked><label>:JAVA</label>
+        <input type="checkbox" id="crs2" name="course" value="python"><label>:PYTHON</label>
+        <input type="checkbox" id="crs3" name="course" value="testing"><label>:TESTING</label>
+        <input type="checkbox" id="crs4" name="course" value="dotnet"><label>:DotNet</label></td></tr>          
+      <tr><td><label>Choose Gender:</label></td>
+        <td><input type="radio" id="r1" name="gender" value="male"><label>:Male</label>
+        <input type="radio" id="r2" name="gender" value="female"><label>:Female</label></td>
+    </tr>      
+    <tr><td></td><td><input type="submit" value="SUBMIT"><input type="reset"></td></tr>
+    <tr><td></td><td><input type="image" src="MyImages/submit.jpg" height="50" width="100"></td></tr>
+</table>
+</form>
+<hr>
+<form>
+    <input type="datetime-local"><br>
+    <input type="range"><br>
+    <input type="color">
+    <input type="image">
+   <input type="search">
+</form>
+
+
+    </body> 
+    </html>

@@ -1,0 +1,119 @@
+--> Php :- Hypertext Preprocessor. It is used to create dynamic web application.
+   -> It is an server side scripting language.
+   -> Website :- collection of web pages which are linked with each other.
+     -> static : layout (read only)
+     -> dynamic : we can interect with database and store and get the information.
+
+     -> Frontend : UI (Html , css , javascript)
+     -> Backend : Php , Java , .net , python 
+       -> Database : Mysql , Oracle , MongoDb etc.
+    -> server side :- we need a server to execute the application (web server)
+    -> scripting language (interpriting language) :- line by line 
+    -> Open Source 
+    -> Cross Platform 
+    -> Support many servers and databases 
+       -> Apache server 
+       -> Mysql Database 
+    -> Environmental Setup 
+        Xampp server :- 
+          Apache 
+          Mysql 
+          Php 
+          X - Cross (windows, linux , mac-os)
+          https://www.apachefriends.org/download.html
+        -> php is case senstive language 
+         a 
+         A 
+         -> extension of php .php 
+      -> To work on php we must save our filed in xampp/htdocs/
+        -> create folder (php_work)
+          first.php 
+          -> to execute it 
+          http://localhost/php_work/first.php 
+        -> How we render or display data in php 
+          echo "---";
+        -> Php syntex 
+        <?php 
+        //put the php code 
+        ?>
+        -> integrating html with php 
+        -> Php is an programming langauge 
+          -> Variables :- temporary memeory location 
+            -> rules 
+               -> start with $ 
+               -> after doller (a-zA-Z or _)
+               -> after it combination of [a-zA-Z0-9_]
+            eg:
+            $empName="anuj"; (string)
+            $emp_salary=23456;(integer)
+          -> Datatypes :- allocate at runtime as per the variable value.
+            gettype(variablename)
+          -> Operators 
+          -> Conditions 
+          -> Loop :- repetation of statement 
+            -> for , while , dowhile
+            eg:
+            for($i=1; $i<=5; $i++){
+                echo "Sumit";
+            }
+             Sumit 
+             Sumit 
+             Sumit 
+             Sumit 
+             Sumit 
+          -> Array : array is used to store multiple value in an single variable of anytype.
+            -> Index based array 
+              eg:
+              $arr=["anuj","anil","sunil"];
+              -> array values are store in index and is start with 0. 
+              0 - anuj 
+              1 - anil 
+              2 - sunil 
+                echo $arr[1];
+              *** find the size of an array 
+                 count(arrayname) or sizeof(arrayname)
+                eg:
+                for($i=0; $i<sizeof($arr);$i++){
+                    echo $arr[$i];
+                }
+          -> Function :- reusability. to perform a specific task 
+            // define 
+            function add($a,$b){
+                return ($a+$b);
+            }
+            //call 
+            $sum=add(45,67);
+            -> Form Handling 
+            $_POST['fieldname'] :- to get the form post method
+        -> Database integration in php 
+          -> Database :- it is used to store large amount of data. 
+             -> It is an collections of tables in the form row and columns.
+             -> Many database like mysql , Ms Sql , Orace, MongoDB 
+               -> Relational :- Mysql , MsSql 
+               -> NoSql :- MongoDb 
+            -> Mysql :- It is an open source database which is used to store larage amount of data.
+              -> database :- db_intro 
+                  -> table :- posts 
+                     -> columns 
+                       id :- ai 
+                       name 
+                       description 
+                       created_at 
+          *** How we integrate php to mysql 
+           -> mysqli connectivity 
+               -> mysqli_connect() :- used to connect with mysql.
+               eg:
+               $conn=mysqli_connect("host","username","password","dbname") or die("Connection error");
+                mysqli_query(connection,"query")
+               -> select data 
+                 mysqli_fetch_assoc() :- fetch records with the help of query
+
+   -> 
+     mysqli_connect() 
+     mysqli_query() 
+     mysqli_fetch_assoc() :- to fetch records behalf of select statement 
+     mysqli_num_rows() :- to find total number of rows return by mysql statement 
+     mysqli_close($conn);
+
+    -> If you want to connect php with many database 
+      -> PDO connectivity 

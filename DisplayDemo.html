@@ -1,0 +1,76 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+<head>
+<title>Lists Demo</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="put imp words from ur webpage" >
+<meta name="author" content="put name of author">
+<meta name="description" content="put short descr">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="MyFiles/MyStyle.css">
+<!-- explore more meta tags on your own-->
+<style>
+    article{
+       background: violet;
+    }
+    /*Implicit properties:
+        always starts at new line, span till full parent width, 
+        height only till number of lines*/
+        /* can apply own height and width*/
+        /*can apply own margin and padding*/
+.blockele{
+    background: yellow;
+    border : 2px solid red;
+    height: 200px;
+    width: 500px;
+    padding:20px;
+    margin: 30px;
+}
+ /*Implicit properties:
+        comes in one line, dont span till full parent width instead if space is available then next inline ele
+        placed immediately in same line, 
+        height only till number of lines*/
+        /* can not apply own height and width*/
+         /*can apply own margin and padding : it spoils look and feel*/
+.inlineele{
+    background: pink;
+    border : 2px solid blue;
+    height: 200px; /* no effect*/
+    width: 500px; /* no effect*/
+    padding:20px;
+    margin: 30px;
+}
+#art2>.blockele{
+    display: inline;
+    margin: 0px;
+    padding:0px;
+}
+#art2>.inlineele{
+    display: block;
+}
+</style>
+</head>
+<body>
+<article>
+    <div class="blockele">
+        Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end
+    </div>
+    <div class="blockele">
+        Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end
+    </div>
+    <b class="inlineele">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end</b>
+    <i class="inlineele">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end</i>
+</article>
+<hr>
+<article id="art2">
+    <div class="blockele">
+        Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end
+    </div>
+    <div class="blockele">
+        Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end
+    </div>
+    <b class="inlineele">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end</b>
+    <i class="inlineele">Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 22-yard (20-metre) pitch with a wicket at each end</i>
+</article>
+</body>
+</html>

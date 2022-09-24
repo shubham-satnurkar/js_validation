@@ -1,0 +1,54 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+    <head>
+        <title>Demo2</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage" >
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="MyFiles/mystyle.css">
+    </head>
+    <body id="bd">
+        <input type="button" value="Show breakfast items" id="brkfastbutton">
+    <section>
+        <h2 class="heading">RED ROSE</h2>
+        <img src="../HTML/MyImages/redflower.jpg">
+        <p id="mypara1">
+            <b>About red rose</b>
+            <i>ABOUT BLUE ROESE</i>
+            <span>HEllo <sup>ALL</sup></span>
+        </p>
+        <p id="mypara3">
+
+        </p>
+        <p id="mypara4">
+
+        </p>
+    </section>
+    <section>
+        <h1 class="heading">BLUE ROSE</h1>
+        <button onclick="zoom()">ZOOM</button> <br>
+        <img id="bluerose" src="../HTML/MyImages/blueflower.jpg" alt="no image">
+        <p id="mypara2">
+            About blue rose
+        </p>
+    </section>
+    <div>
+        <input type="radio" id="r1" name="gender" value="male" onchange="showState()" >
+        <input type="radio" id="r2" name="gender" value="female" onchange="showState()">
+    </div>
+    
+
+        <script src="MyFiles/DOM.js"></script>
+    </body>
+</html>
+<!--
+            html
+        head                body
+title meta...           section
+ text node           h2  img-src        p-id
+                text node               text node
+
+
+-->

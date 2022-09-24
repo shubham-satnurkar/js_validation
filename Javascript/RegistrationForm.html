@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RegistrationForm</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="put imp words from ur webpage" >
+        <meta name="author" content="put name of author">
+        <meta name="description" content="put short descr">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- explore more meta tags on your own-->
+        <style>
+            .error{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="Success.html"  onsubmit="return validateForm()"   novalidate>
+            <table>
+               <tr>
+                    <td> <label for="fname">First Name:</label></td>
+                    <td><input type="text" id="fname" value="vina" name="myname" onblur="validate1()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error1" class="error"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname"  name="myname" onblur="validate2()"></td>
+                </tr>
+                <tr><td></td><td id="error2" class="error"></td></tr>
+
+                <tr>
+                    <td><label for="uname">Set Username:</label></td>
+                    <td><input type="text" id="uname"  name="uname" onblur="validate3()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error3" class="error"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pass">Set Password:</label></td>
+                    <td><input type="password" id="pass"  name="password" onblur="validate4()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error4" class="error"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" id="showp" name="showp" onchange="show()"><label for="pass">Show password</label></td>
+                </tr>
+                <tr>
+                    <td><label for="cpass">Confirm Password:</label></td>
+                    <td><input type="password" id="cpass"  name="cpassword" onblur="validate5()"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="error5" class="error"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email Id:</label></td>
+                    <td><input type="email" id="email"  name="email" onblur="validate6()"></td></tr>
+                <tr><td></td><td id="error6" class="error"></td> </tr>   
+
+                <tr>
+                    <td><label for="mobile">Mobile number:</label></td> 
+                    <td><input type="text" id="mobile"  name="mobile" onblur="validate7()"></td>
+                </tr> 
+                <tr>
+                    <td></td>
+                    <td id="error7" class="error"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                        <td><input type="number" id="age" name="age" onblur="validate8()"></td>
+                    </tr>  
+                <tr>
+                    <td></td>
+                    <td id="error8" class="error"></td>
+                </tr>  
+
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="SUBMIT"><input type="reset"></td>
+                </tr> 
+            </table>
+        </form>
+        <script src="MyFiles/Validate.js"></script>
+    </body> 
+</html>
